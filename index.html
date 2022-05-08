@@ -3,32 +3,78 @@
 <head>
   <title>Doya's page</title>
   <meta charset="utf-8">
-
+  <style>
+    body{
+      margin: 0;
+    }
+    a{
+       color:black;
+       text-decoration: none;
+     }
+    h1{
+       font-size:45px;
+       text-align: center;
+       border-bottom: 1px solid gray;
+       margin: 0;
+       padding: 20px;
+     }
+    #grid{
+      display: grid;
+      grid-template-columns: 220px 1fr;
+    }
+    #grid #index{
+      border-right:1px solid gray;
+    }
+    #grid #index ol{
+      width: 188px;
+      margin: 0;
+      padding-top:20px;
+    }
+    #grid #article{
+      padding-left:41px;
+    }
+    #grid #article ol{
+      width:150px;
+      margin:0;
+      padding:20px;
+    }
+   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1RW9N868J"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-B1RW9N868J');
 </script>
 </head>
 <body>
-  <h1>Doya's page</h1>
-  <ol>
-    <li><a href="introduction.html">김도야는 누구인가?</a></li>
-    <li><a href="favorites.html">좋아하는 것</a></li>
-    <li><a href="goals.html">삶의 목표</a></li>
-  </ol>
-  <h2>개인</h2>
-  <p>
-    <a href="https://chocolate-arch-cab.notion.site/532597b046024596a98f23e3abe28892" target="_blank" title="notion 둘러보기">도야의 책장</a>
-  </p>
-  <h2>좋아하는 노래</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fgSXAKsq-Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h1><a href="index.html">Doya's page</a></h1>
+  <div id="grid">
+    <div id="index">
+      <ol>
+        <li><a href="introduction.html">김도야는 누구인가?</a></li>
+        <li><a href="favorites.html">좋아하는 것</a></li>
+        <li><a href="goals.html">삶의 목표</a></li>
+      </ol>
+    </div>
+    <div id="article">
+      <h2>개인</h2>
+      <p>
+        <a href="https://chocolate-arch-cab.notion.site/532597b046024596a98f23e3abe28892" target="_blank" title="notion 둘러보기">도야의 책장</a>
+      </p>
+      <h2>좋아하는 노래</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fgSXAKsq-Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>
+      <a href="Eng.html">단어암기</a>
+        <ul>
+          <li>안녕하세요</li>
+        </ul>
+      </p>
+    </div>
+  </div>
 
-  <p>
+  <!--<p>
     <div id="disqus_thread"></div>
     <script>
         /**
@@ -48,10 +94,10 @@
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </p>
+  </p>-->
 
   <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!--<script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -61,8 +107,7 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>
+</script>-->
 <!--End of Tawk.to Script-->
-
 </body>
 </html>
